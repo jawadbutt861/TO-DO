@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-heading{
+    font-size: 40px;
+    color: #020024;
+    margin-top: 5rem;
+}
+body{
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main{
+    background-color: white;
+    width: 40rem;
+    height: 5rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 5rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-input{
+    padding: 5px;
+    width: 20rem;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+}
+.todo-button{
+    padding: 5px;
+    width: 5rem;
+    /* font-size: 20px; */
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.todo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.list{
+    background-color: white;
+    width: 40rem;
+    height: max-content;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.list > li{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+li > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.edit-btn-logo{
+    padding: 5px;
+    background-color: white;
+}
+
+.del-btn-logo{
+    padding: 5px;
+    background-color: white;
+}
+.save-btn-logo{
+    padding: 5px;
+    background-color: white;
+}
+.added-input{
+    border: none;
+    width: max-content;
+    font-size: 20px;
+}
+.saved-heading{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(194, 190, 190);
+}
+@media (max-width:660px){
+    .main{
+        width: 30rem;
+    }
+    .list{
+        width: 30rem;
+    }
+
+    .saved-heading{
+        font-size: 25px;
+    }
+}
+@media (max-width:500px){
+    .todo-div{
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .main{
+        width: 25rem;
+        height: max-content;
+    }
+    .list{
+        width: 25rem;
+    }
+
+    .saved-heading{
+        font-size: 20px;
+    }
+}
+@media (max-width:420px){
+    .todo-div{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main{
+        width: 22rem;
+        height: 7rem;
+        padding: 20px;
+    }
+    .list{
+        width: 22rem;
+        height: max-content;
+    }
+    .saved-heading{
+        font-size: 20px;
+    }
+    .list > li{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

@@ -19,6 +19,7 @@ addButton.addEventListener("click",()=>{
     addedInput.style.outline = "none";
     addedInput.value = addInput.value;
     li.appendChild(addedInput);
+    addInput.value = "";
     // Create div
     let div = document.createElement("div");
     li.appendChild(div)
